@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 #mainPicContainer {
     display: flex;
     width: 100%;
@@ -23,7 +27,7 @@
 
 p {
     display: none;
-    /* n'apparait pas sur mobile */
+    /* à programmmer pour ne pas apparaitre sur mobile */
 }
 
 #articles-box{
@@ -50,6 +54,7 @@ p {
     background-color : lightblue;
     min-height: 125px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
 }
 
 .article-img {
@@ -67,12 +72,3 @@ p {
 .box-body h2 p {
    margin: 10px 0px;
 }
-
-.article-button {
-    border: none;
-    border-radius: 10px;
-    height: 0px;
-    background-color: whitesmoke;
-    width: 100%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
