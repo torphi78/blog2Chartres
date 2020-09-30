@@ -26,13 +26,13 @@
     left: 0;
     z-index: 50;
     width: 100%;
-    padding: 3% 0 3% 0;
+    padding: 15px 0 15px 0;
     background-color: #00cc85;
 }
 .menuToggle{
     display: flex;
     flex-direction: row;
-    height: 1024px;
+    height: auto;
 }
 .menu{
     position: fixed;
