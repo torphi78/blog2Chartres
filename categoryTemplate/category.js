@@ -2,21 +2,22 @@ const articles = document.querySelector("#articles-box");
 
 /* Pour ajouter un article sur la page Catégorie, on le rajoute
 dans le tableau suivant, avec le titre de l'article, l'image
-associée et le lien vers l'article. Ensuite la boite se crée
-automatiquement.
+associée, le lien vers l'article ainsi que la description qui
+n'apparait que sur desktop. La boite se crée automatiquement.
 */
+
 const articlesList = [
     {
         title: "Article 2",
         picture: "https://placekitten.com/200/287",
-        link: "",
-        description: "Description de l'article"
+        link: "https://github.com/FlorentLem/Project1-BlogChartres",
+        description: "Première phrase de l'article..."
     },
     {
         title: "Article 3",
-        picture: "https://placekitten.com/200/139",
-        link: "",
-        description: "Description de l'article"
+        picture: "https://placekitten.com/200/239",
+        link: "https://github.com/FlorentLem/Project1-BlogChartres",
+        description: "Première phrase de l'article..."
     },
     {
         title: "Article 4",
@@ -33,7 +34,7 @@ const articlesList = [
 ];
 
 function createArticleBox(title, imageUrl, url, description) {
-    const articleLink = document.querySelector("a");
+    const articleLink = document.createElement("a");
     articleLink.setAttribute("href", url);
     articles.appendChild(articleLink);
 
@@ -51,13 +52,13 @@ function createArticleBox(title, imageUrl, url, description) {
     articleBox.appendChild(boxBody);
 
     const boxTitle = document.createElement("h2");
-    boxTitle.classList.add("card-title");
-    boxTitle.innerHTML = `${title}`;
+    boxTitle.classList.add("article-title");
+    boxTitle.innerText = title;
     boxBody.appendChild(boxTitle);
 
     const articleDescription = document.createElement("p");
     articleDescription.classList.add("article-description");
-    boxTitle.innerText = description;
+    articleDescription.innerText = description;
     boxBody.appendChild(articleDescription);
 };
 
