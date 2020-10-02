@@ -2,7 +2,9 @@
     margin : 0;
     padding : 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
+
 
 
 /* NavBar */
@@ -23,13 +25,13 @@
     border-radius: 5px;
   }
 .navBar {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 60;
     width: 100%;
     padding: 15px 0 15px 0;
-    background-color: #00cc85;
+    background-color: #6bc76b;
 }
 .menuToggle{
     display: flex;
@@ -62,19 +64,85 @@
 
 
 
+
+
 /* Carousel */
 .carouselContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
+    z-index: 30;
+    min-width: 100%;
+    position: relative;
+    margin: auto;
 }
-.imgCarousel {
-    background: no-repeat;
-    background-size: contain;
-    height: 30vh;
+.carouselImg{
+    z-index: 30;
+    background-size: cover;
+    width: 100%;
+    min-height: 250px;
+    max-height: 500px;
+    filter: blur(0.4px);
+}
+.mySlides {
+      display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
     width: auto;
-
+    margin-top: -22px;
+    padding: 16px;
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dotBar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 30px;
+}
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-flex;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+
+
 
 
 
@@ -84,8 +152,14 @@
     justify-content: center;
     margin-bottom: 10%;
 }
+
+
+/* Welcome */
 #Welcome {
-    margin-bottom: 10%;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10%;
 }
 
 
@@ -95,10 +169,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 7%;
+    padding: 20px;
     width: 100%;
     height: 100%;
-    grid-gap: 25px;
+    grid-gap: 20px;
 }
 .categories {
     display: flex;
@@ -106,7 +180,7 @@
     align-items: center;
     background-color: #bfbfbf;
     min-height: 200px;
-    border-radius: 5px 5px 5px 5px;
+    /*border-radius: 5px 5px 5px 5px;*/
 }
 
 
@@ -114,16 +188,15 @@
 /* Articles */
 .articleContainer {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     height: auto;
     width: 100%;
     padding: 20px;
     grid-gap: 20px;
 }
 .articleContainerTwo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
     width: 100%;
 }
@@ -132,24 +205,18 @@
     grid-row-start: 1;
     grid-row-end: 3;
 }
-#SmallerArticle {
-    grid-column-start: 2;
-    grid-row-start: 1;
-}
+
 .articleDisplay {
     text-align: center;
-    min-height: 125px;
+    min-height: 150px;
     background-color: #bfbfbf;
-    border-radius: 5px 5px 5px 5px;
+    /*border-radius: 5px 5px 5px 5px;*/
 
 }
-.articleDisplayTwo {
-    text-align: center;
-    background-color: #bfbfbf;
-    min-height: 125px;
-    max-width: 240px;
-    border-radius: 5px 5px 5px 5px;
 
+h2 {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
