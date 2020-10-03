@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
-
+body{
+    background-color:#f9f9eb;
+}
 
 
 /* NavBar */
@@ -31,7 +33,7 @@
     z-index: 60;
     width: 100%;
     padding: 15px 0 15px 0;
-    background-color: #6bc76b;
+    background-color: #00cc85;
 }
 .menuToggle{
     display: flex;
@@ -68,75 +70,24 @@
 
 /* Carousel */
 .carouselContainer {
-    z-index: 30;
-    min-width: 100%;
-    position: relative;
+    width: 100%;
     margin: auto;
 }
 .carouselImg{
-    z-index: 30;
     background-size: cover;
     width: 100%;
-    min-height: 250px;
-    max-height: 500px;
+    height: 250px;
     filter: blur(0.4px);
 }
 .mySlides {
       display: none;
-}
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #f2f2f2;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-.dotBar {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    height: 30px;
-}
-.dot {
-    cursor: pointer;
-    height: 8px;
-    width: 8px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-flex;
-    transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-    background-color: #717171;
-}
-  
+} 
 .fade {
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 @keyframes fade {
-    from {opacity: .4}
+    from {opacity: .5}
     to {opacity: 1}
 }
 
@@ -165,6 +116,12 @@
 
 
 /* Categories */
+#Categories {
+    background-color: #404040;
+    color: #f7f7ee;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
 .categoriesContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -181,6 +138,9 @@
     background-color: #bfbfbf;
     min-height: 200px;
     /*border-radius: 5px 5px 5px 5px;*/
+}
+.categories:hover {
+    box-shadow: 0px 0px 22px 8px rgba(255,255,255,1);
 }
 
 
