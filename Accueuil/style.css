@@ -106,10 +106,11 @@ body{
     margin: 150px 0 0 0;
 }
 
-@media screen (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .navigation{
         display: none;
     }
+
     .menuBurger {
         display: flex;
     }
@@ -128,6 +129,7 @@ body{
         margin: 100px 0 0 0;
     }
 }
+
 @media only screen and (min-device-width: 667px) and (max-device-width: 860px) {
     .navigation{
         display: none;
@@ -276,8 +278,7 @@ body{
 }
 .welcome h1 {
     padding: 0 0 100px;
-    font-size: 140px;
-    text-decoration: underline;
+    font-size: 100px;
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .welcome{
@@ -387,7 +388,7 @@ body{
     padding: 20px;
     width: 100%;
     height: 100%;
-    grid-gap: 20px;
+    grid-gap: 50px;
 }
 .categories {
     display: flex;
@@ -396,6 +397,7 @@ body{
     background-color: #bfbfbf;
     height: 500px;
     border-radius: 5px 5px 5px 5px;
+    margin: 30px 40px 50px 40px;
 }
 .categories:hover {
     box-shadow: 0.2rem 0.2rem 1.5rem  #8bb3c1;
@@ -408,6 +410,9 @@ body{
     }
     .categories{
         max-height: 200px;
+    }
+    .categoriesContainer{
+        grid-gap: 30px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px){
