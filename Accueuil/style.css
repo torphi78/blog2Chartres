@@ -44,12 +44,14 @@ body{
     z-index: 150;
     width: 100%;
     background:  #8bb3c1;
+    
 }
 .menuToggle{
     display: flex;
     flex-direction: row;
 }
 .menu{
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -62,22 +64,26 @@ body{
     opacity: 1;
 }
 .menuContent {
-    margin: 80px 0 0 60px;
+    margin: 50px 0 0 0;
     list-style: none;
+    display: none;
 }
 .menuContent li {
     background-color: #8bb3c1;
     color: white;
-    margin: 0 0 15px 0;
+    font-size: 3.5vw;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    display: none;
 
 }
 
 .navigation {
-    font-size: 20px;
+    font-size: 1vw;
     color: white;
     display: flex;
     list-style: none;
-    margin: 0 0 0 100px;
+    margin: 0 0 0 50px;
     
 }
 .navigation li {
@@ -90,123 +96,42 @@ body{
 }
 .navigation li:hover {
     background-color: white;
-    color: #8bb3c1;
+    color: #467ebe;
     cursor: pointer;
     border-radius: 7px 7px 7px 7px;
 }
-.chartattack{
-    padding: 25px 0 0 0;
-    margin: 0 50px 0 100px;
-    font-size: 35px;
-    font-weight: 700;
-
+.logoChartresNav{
+    padding: 0 100px;
 }
 .logoChartresBurger {
     width: 90%;
-    margin: 150px 0 0 0;
+    margin: 50px 0 0 0;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1610px) {
     .navigation{
         display: none;
     }
-
-    .menuBurger {
-        display: flex;
-    }
-    .navBar {
-        position: fixed;
-        padding: 15px 0 15px 0;
-    }
-    .menuContent{
-        margin: 55px 0 0 0;
-    }
-    .menuContent li {
-        padding: 20px 20px 20px 20px;
-        text-align: center;
-    }
-    .logoChartresBurger {
-        margin: 100px 0 0 0;
-    }
-}
-
-@media only screen and (min-device-width: 667px) and (max-device-width: 860px) {
-    .navigation{
-        display: none;
+    .menu{
+        display: block;
     }
     .menuBurger{
         display: flex;
     }
     .navBar {
-        position: fixed;
-        padding: 15px 0 15px 0;
-    }
-    .menuContent{
-        margin: 55px 0 0 0;
-    }
-    .menuContent li {
-        font-size: 15px;
-        padding: 20px 20px 20px 20px;
-        text-align: center;
-    }
-    .logoChartresBurger {
-        margin: 100px 0 0 0;
-    }
-}
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .navigation{
-        display: none;
-    }
-    .menuBurger{
         display: flex;
-    }
-    .navBar {
         position: fixed;
-        padding: 15px 0 15px 0;
+        padding: 20px 0 15px 0;
+
     }
     .menuContent{
-        margin: 55px 0 0 0;
+        display: block;
     }
     .menuContent li {
-        padding: 20px 20px 20px 20px;
-        text-align: center;
-    }
-    .logoChartresBurger {
-        margin: 100px 0 0 0;
+        display: block;
     }
 }
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1280px){
-    .navigation{
-        display: none;
-    }
-    .menuBurger{
-        display: flex;
-    }
-    .navBar {
-        position: fixed;
-        padding: 15px 0 15px 0;
-    }
-    .menuContent{
-        margin: 55px 0 0 0;
-    }
-    .menuContent li {
-        padding: 20px 20px 20px 20px;
-        text-align: center;
-    }
-    .logoChartresBurger {
-        margin: 100px 0 0 0;
-    }
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -236,9 +161,9 @@ body{
     to {opacity: 1}
 }
 .imgCarousel {
-    filter: blur(1px);
+    filter: blur(3px);
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 0px) and (max-device-width : 667px) {
     .imgCarousel {
         filter: blur(0);
     }
@@ -263,97 +188,38 @@ body{
     opacity: 0.9;
     color: white;
     text-align: center;
-    right: 0%;
+    right: 5%;
     top: 25%;
     height: 500px;
     padding: 150px 50px 50px;
 }
-.welcome p {
-    background-color: #8bb3c1;
-    opacity: 1;
-    margin: 0px 0;
-    font-size: 50px;
-    border-radius: 5px;
-    padding: 15px 15px 15px 15px;
-}
 .welcome h1 {
     padding: 0 0 100px;
-    font-size: 100px;
+    font-size: 9vw;
+    font-weight: 800;
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 668px) and (max-device-width : 1610px) {
     .welcome{
         margin: 0 25px 50px 25px;
         right: 0%;
-        top: 15%;
+        top: 20%;
         padding: 75px 0px 0;
     }
-    .welcome p {
-        border-radius: 10px;
-        font-weight: 500;
-        margin: 10px 0;
-        font-size: 25px;
-    }
     .welcome h1 {
-        font-size: 65px;
-        padding: 0;
-    }
-}
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px){
-    .welcome{
-        margin: 0 25px 50px 25px;
-        right: 0%;
-        top: 15%;
-        padding: 75px 0px 0;
-    }
-    .welcome p {
-        border-radius: 10px;
-        font-weight: 500;
-        margin: 10px 0;
-        font-size: 35px;
-    }
-    .welcome h1 {
-        font-size: 150px;
         padding: 0;
     }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 0px) and (max-device-width : 667px) {
     .welcome{
         margin: 0 25px 50px 25px;
         right: 0;
-        top: 0%;
+        top: 5%;
         height: 75px;
         padding: 75px 0px 0;
     }
-    .welcome p {
-        border-radius: 5px;
-        font-weight: 600;
-        margin: 10px 0;
-        font-size: 15px;
-    }
     .welcome h1 {
         padding: 0;
-        font-size: 25px;
-        margin: 0;
-    }
-}
-@media only screen and (min-device-width: 667px) and (max-device-width: 760px) {
-    .welcome{
-        margin: 0 25px 50px 25px;
-        right: 0;
-        top: 15%;
-        height: 75px;
-        padding: 75px 0px 0;
-    }
-    .welcome p {
-        border-radius: 5px;
-        font-weight: 600;
-        margin: 10px 0;
-        font-size: 25px;
-    }
-    .welcome h1 {
-        padding: 0;
-        font-size: 50px;
         margin: 0;
     }
 }
@@ -385,10 +251,10 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 20px;
+    padding: 30px;
     width: 100%;
     height: 100%;
-    grid-gap: 50px;
+    grid-gap: 30px;
 }
 .categories {
     display: flex;
@@ -397,13 +263,12 @@ body{
     background-color: #bfbfbf;
     height: 500px;
     border-radius: 5px 5px 5px 5px;
-    margin: 30px 40px 50px 40px;
 }
 .categories:hover {
     box-shadow: 0.2rem 0.2rem 1.5rem  #8bb3c1;
     cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-device-width : 0px) and (max-device-width : 667px) {
     #Categories{
         font-size: 18px;
         margin-bottom: 65px;
@@ -412,16 +277,23 @@ body{
         max-height: 200px;
     }
     .categoriesContainer{
-        grid-gap: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        grid-gap: 10px;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@media only screen and (min-device-width : 668px) and (max-device-width : 1610px) {
     #Categories{
         font-size: 35px;
         margin-bottom: 75px;
     }
     .categories{
         max-height: 300px;
+    }
+    .categoriesContainer{
+        grid-gap: 20px;
+        padding: 20px;
     }
 }
 
@@ -469,17 +341,31 @@ body{
     font-size: 25px;
     padding: 0 20px 0 20px;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-device-width : 0px) and (max-device-width : 667px) {
     #LastPost h2 {
-        text-align: center;
-        color: black;
+        font-size: 25px;
     }
     #LastPost p {
-        font-size: 18px;
+        font-size: 15px;
     }
     .articleDisplay{
-        min-height: 180px;
+        min-height: 200px;
     }
+    #BigArticle {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+    .articleContainer {
+        margin: 20px 0;
+        padding: 5px;
+        grid-gap: 5px;
+    }
+}
+@media only screen and (min-device-width : 668px) and (max-device-width : 1610px) {
+    .articleDisplay{
+        min-height: 250px;
+    }  
 }
 
 
@@ -500,7 +386,7 @@ footer{
     font-size: 20px;
     
 }
-#continainerFooter li{
+#containerFooter li{
     color: white;
     text-decoration: none;
 }
@@ -519,19 +405,26 @@ footer{
 #containerFooter li:hover{
     color: #404040;
 }
-@media screen and (min-device-width : 320px) and (max-device-width : 480px){
-    #logoChartres{
-        width: 80%;
-       
-    }
+@media screen and (min-device-width : 0px) and (max-device-width : 667px){
     footer{
-        height: 100px;
-        font-size: 15px;
+        height: 125px;
+    }
+    #containerFooter li{
+        padding: 10px 10px 10px 10px;
+        font-size: 4vw;
+    }
+    .logoChartresFooter{
+        display: none;
+    }
+}
+@media only screen and (min-device-width : 668px) and (max-device-width : 1610px) {
+    .logoChartresFooter{
+        width: 80%;
+    }
+    #containerFooter li{
+        padding: 5px 5px 5px 5px;
     }
     #containerFooter{
-        margin: 30px 0 0 30px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+        margin: 0 0 0 20px;
     }
 }
