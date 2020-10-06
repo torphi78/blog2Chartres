@@ -39,11 +39,13 @@ body{
   }
 .navBar {
     position: fixed;
+    transform: translateY(0);
     top: 0;
     left: 0;
     z-index: 150;
     width: 100%;
-    background:  #8bb3c1;
+    background:  #7594d7;
+    transition: 0.6s;
     
 }
 .menuToggle{
@@ -57,7 +59,7 @@ body{
     left: 0;
     z-index: 120;
     transform: translateX(-100%);
-    transition: 0.3s;
+    transition: 0.6s;
     background-color: #f1f1f1;
     width: 40%;
     height: 100%;
@@ -69,7 +71,7 @@ body{
     display: none;
 }
 .menuContent li {
-    background-color: #8bb3c1;
+    background-color: #7594d7;
     color: white;
     font-size: 3.5vw;
     padding: 20px 20px 20px 20px;
@@ -77,18 +79,16 @@ body{
     display: none;
 
 }
-
 .navigation {
     font-size: 1vw;
     color: white;
     display: flex;
     list-style: none;
-    margin: 0 0 0 50px;
+    margin: 0;
     
 }
 .navigation li {
-    margin: 0px 30px 0 0;
-    padding: 35px 10px 25px 10px;
+    padding: 35px 25px 25px 25px;
 }
 .navigation a {
     text-decoration: none;
@@ -96,20 +96,20 @@ body{
 }
 .navigation li:hover {
     background-color: white;
-    color: #467ebe;
+    color: #7594d7;
     cursor: pointer;
-    border-radius: 7px 7px 7px 7px;
 }
 .logoChartresNav{
     padding: 0 100px;
+    margin: 0 200px 0 0;
 }
 .logoChartresBurger {
     width: 90%;
-    margin: 50px 0 0 0;
+    margin: 200px 0 0 0;
 }
 
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 1610px) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 1599px) {
     .navigation{
         display: none;
     }
@@ -154,7 +154,7 @@ body{
 } 
 .fade {
     animation-name: fade;
-    animation-duration: 3s;
+    animation-duration: 5s;
 }
 @keyframes fade {
     from {opacity: .5}
@@ -245,7 +245,7 @@ body{
     font-weight: 700;
     margin-bottom: 125px;
     font-size: 30px;
-    box-shadow: 2px 36px 41px -28px #8bb3c1;
+    box-shadow: 2px 36px 41px -28px  #7594d7;
 }
 .categoriesContainer{
     display: grid;
@@ -265,7 +265,8 @@ body{
     border-radius: 5px 5px 5px 5px;
 }
 .categories:hover {
-    box-shadow: 0.2rem 0.2rem 1.5rem  #8bb3c1;
+    box-shadow: 0.2rem 0.2rem 1.5rem  #7594d7;
+    transition: 0.3s;
     cursor: pointer;
 }
 @media only screen and (min-device-width : 0px) and (max-device-width : 667px) {
@@ -358,8 +359,8 @@ body{
     }
     .articleContainer {
         margin: 20px 0;
-        padding: 5px;
-        grid-gap: 5px;
+        padding: 10px;
+        grid-gap: 10px;
     }
 }
 @media only screen and (min-device-width : 668px) and (max-device-width : 1610px) {
@@ -381,7 +382,7 @@ body{
 /*Footer */  
 footer{
     height: 200px;
-    background: #8bb3c1;
+    background: #7594d7;
     color: white;
     font-size: 20px;
     
