@@ -14,24 +14,18 @@ const articlesList = [
         description: "Sous une halle de style Baltard, les producteurs de la région chartraine et d’Eure-et-Loir se retrouvent pour vendre ce qu’ils ont de meilleur[...]"
     },
     {
-        title: "Article 3",
-        picture: "https://placekitten.com/200/239",
+        title: "La Maison Picassiette",
+        picture: "../assets/Picassiette/picassiette1.jpg",
         link: "https://github.com/FlorentLem/Project1-BlogChartres",
-        description: "Première phrase de l'article..."
+        description: " Issu d’un milieu modeste, Raymond Isidore s’installe dans une petite maison dans le quartier chartrain de Saint-Chéron. Lors de ses promenades, il prend l'habitude de ramasser des morceaux de verre et de faïence qu'il transforme en [...]"
     },
     {
-        title: "Article 4",
-        picture: "https://placekitten.com/200/90",
+        title: "Médiathèque L'Apostrophe",
+        picture: "../assets/MediathequeApostrophe/apostrophe1.jpeg",
         link: "",
-        description: "Description de l'article"
-    },
-    {
-        title: "Article 5",
-        picture: "https://placekitten.com/200/194",
-        link: "",
-        description: "Description de l'article"
+        description: "L'Hôtel des Postes transformé en médiathèque est haut de près de 55m sur 33m de longueur. Le bâtiment en béton armé, à la charpente métallique est composé d’un beffroi à horloge avec encorbellements [...]"
     }
-];
+]
 
 function createArticleBox(title, imageUrl, url, description) {
     const articleLink = document.createElement("a");

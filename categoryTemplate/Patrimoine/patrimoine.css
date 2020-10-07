@@ -117,6 +117,22 @@
 }
 
 /* main body */
+#category-description {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#description {
+    height: 100%;
+    width: 100%;
+}
+
+#text-description {
+    display: block;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -125,6 +141,7 @@ h1 {
     text-transform : uppercase;
     display: inline-block;
     font-weight: 800;
+    text-shadow:  rgba(0, 0, 0, 0.5) 3px 3px 8px;
     font-size: 9vw;
 }
 
@@ -190,7 +207,7 @@ p {
 
 .box-body {
     padding: 5%;
-    padding-top: 10%;
+    padding-top: 5%;
     overflow: hidden;
 }
 
@@ -203,8 +220,20 @@ p {
         height: 300px;
     }
 
+    #category-description {
+        height: 150px;
+    }
+
+    #description{
+        padding: 20px 25px 0 25px;
+    }
+
+    #text-description {
+        font-size: 17px;
+    }
+
     #articles-box {
-        padding: 20px;
+        padding: 10px 20px 20px 20px;
         grid-gap: 20px;
     }
 
@@ -249,8 +278,20 @@ p {
         height: 400px;
     }
 
+    #category-description {
+        height: 200px;
+    }
+
+    #description{
+        padding: 30px 40px 0 40px;
+    }
+
+    #text-description {
+        font-size: 24px;
+    }
+
     #articles-box {
-        padding: 30px;
+        padding: 10px 30px 30px 30px;
         grid-gap: 30px;
     }
 
@@ -288,8 +329,20 @@ p {
         height: 600px;
     }
 
+    #category-description {
+        height: 200px;
+    }
+
+    #description{
+        padding: 50px 150px 0 150px;
+    }
+
+    #text-description {
+        font-size: 32px;
+    }
+
     #articles-box {
-        padding: 120px;
+        padding: 50px 120px 120px 120px;
         grid-gap: 50px 120px;
     }
 
@@ -313,6 +366,10 @@ p {
 
     }
 
+    .box-body {
+        padding-left: 10%;
+    }
+
     #first-article {
         height: 720px;
         display: block;
@@ -322,8 +379,12 @@ p {
     #first-article .article-img {
         height: 75%;
     }
+
+    #first-article .box-body {
+padding-left: 5%;    }
 }
 
+/* footer */
 footer{
     height: 200px;
     background: #7594d7;
