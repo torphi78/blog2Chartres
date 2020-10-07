@@ -5,6 +5,116 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.menuBurger{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 0 2%;
+    margin: 0 55% 0 1%;
+    cursor: pointer;
+  }
+.bars{
+    background-color: #E2F2FF;
+    width: 30px;
+    height: 2px;
+    margin: 3px 0;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+.navBar {
+    position: fixed;
+    transform: translateY(0);
+    top: 0;
+    left: 0;
+    z-index: 150;
+    width: 100%;
+    background:  #7594d7;
+    transition: 0.6s;
+}
+.menuToggle{
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 120;
+    transform: translateX(-100%);
+    transition: 0.6s;
+    background-color: #f1f1f1;
+    width: 40%;
+    height: 100%;
+    opacity: 1;
+}
+.menuContent {
+    margin: 50px 0 0 0;
+    list-style: none;
+    display: none;
+}
+.menuContent li {
+    background-color: #7594d7;
+    color: white;
+    font-size: 3.5vw;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    display: none;
+
+}
+.navigation {
+    font-size: 1vw;
+    color: white;
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+.navigation li {
+    padding: 35px 25px 25px 25px;
+}
+.navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+.navigation li:hover {
+    background-color: white;
+    color: #7594d7;
+    cursor: pointer;
+}
+.logoChartresNav{
+    padding: 0 100px;
+    margin: 0 200px 0 0;
+}
+.logoChartresBurger {
+    width: 90%;
+    margin: 200px 0 0 0;
+}
+
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1599px) {
+    .navigation{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menuBurger{
+        display: flex;
+    }
+    .navBar {
+        display: flex;
+        position: fixed;
+        padding: 20px 0 15px 0;
+
+    }
+    .menuContent{
+        display: block;
+    }
+    .menuContent li {
+        display: block;
+    }
+}
+
 a:link {
     text-decoration: none;
 }
@@ -205,5 +315,53 @@ p {
 
     #first-article .article-img {
         height: 75%;
+    }
+}
+
+footer{
+    height: 200px;
+    background: #7594d7;
+    color: white;
+    font-size: 20px;
+}
+#containerFooter li{
+    color: white;
+    text-decoration: none;
+}
+#containerFooter{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#containerFooter a {
+    text-decoration: none;
+    color: inherit;
+}
+#containerFooter li:hover{
+    color: #404040;
+}
+@media screen and (min-device-width : 0px) and (max-device-width : 667px){
+    footer{
+        height: 125px;
+    }
+    #containerFooter li{
+        padding: 10px 10px 10px 10px;
+        font-size: 4vw;
+    }
+    .logoChartresFooter{
+        display: none;
+    }
+}
+@media only screen and (min-device-width : 668px) and (max-device-width : 1610px) {
+    .logoChartresFooter{
+        width: 80%;
+    }
+    #containerFooter li{
+        padding: 5px 5px 5px 5px;
+    }
+    #containerFooter{
+        margin: 0 0 0 20px;
     }
 }

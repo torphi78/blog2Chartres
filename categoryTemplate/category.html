@@ -14,15 +14,39 @@
 </head>
 
 <body>
-    <section id="Menu">
+    <header>
         <nav class="navBar">
             <div class="menuBurger">
                 <span class="bars"></span>
                 <span class="bars"></span>
                 <span class="bars"></span>
             </div>
+            <ul class="navigation">
+                <a href="https://www.chartres.fr/"><img src='assets/logo-Chartres.png' alt="logo trop stylé"
+                        class="logoChartresNav"></a>
+                <li class="navCategory"><a href="index.html">Accueil</a></li>
+                <li class="navCategory">Patrimoine</li>
+                <li class="navCategory">Restauration</li>
+                <li class="navCategory">Hébergement</li>
+                <li class="navCategory">Activités et Loisirs</li>
+                <li class="navCategory">Contactez Nous</li>
+            </ul>
         </nav>
-    </section>
+        <div class="menuToggle">
+            <div class="menu">
+                <ul class="menuContent">
+                    <li class="content">Accueil</li>
+                    <li class="content">Patrimoine</li>
+                    <li class="content">Restauration</li>
+                    <li class="content">Hébergement</li>
+                    <li class="content">Activités et Loisirs</li>
+                    <li class="content">Contactez Nous</li>
+                </ul>
+                <a href="https://www.chartres.fr/"><img src='assets/logo-Chartres.png' alt="logo trop stylé"
+                        class="logoChartresBurger"></a>
+            </div>
+        </div>
+    </header>
 
     <section id="mainPicContainer">
         <div class="categoryTitle">
@@ -45,7 +69,21 @@
             </div>
         </a>
     </section>
+
+    <footer>
+        <ul id="containerFooter">
+            <li><a href="#">À Propos<a></li>
+            <li><a href="#">Contactez Nous<a></li>
+            <li><a href="#">Mentions Légales</a></li>
+            <a href="https://www.chartres.fr/">
+                <img src='assets/logo-Chartres.png' alt="logo trop stylé" class="logoChartresFooter">
+            </a>
+        </ul>
+    </footer>
+
     <script src="category.js"></script>
+    <script src="nav.js"></script>
+
 </body>
 
 </html>
