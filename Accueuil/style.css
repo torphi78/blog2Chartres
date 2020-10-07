@@ -102,6 +102,7 @@ body{
     background-color: white;
     color: #00BE7B;
     cursor: pointer;
+    transition: 0.4s ease;
 }
 .logoChartresNav{
     padding: 0 100px;
@@ -246,11 +247,13 @@ body{
 /* Categories */
 #Categories {
     background-color: #404040;
-    color: #f7f7ee;
+    box-shadow: 2px 36px 41px -28px  #00BE7B;
     font-weight: 700;
     margin-bottom: 125px;
     font-size: 4vw;
-    box-shadow: 2px 36px 41px -28px  #00BE7B;
+    z-index: 70;
+    bottom: 20%;
+    color: #f7f7ee;
 }
 .categoriesContainer{
     display: grid;
@@ -274,8 +277,9 @@ body{
     border-radius: 5px 5px 5px 5px;
     z-index: 50;
 }
+
 .categories:hover {
-    transition: 0.5s;
+    transition: 0.5s ease;
     cursor: pointer;
     transform: scale(1.06);
 }
@@ -304,6 +308,7 @@ body{
 #Hébergement {
     background-image: url('assets/Categories-Hébergement.webp');
 }
+
 
 @media only screen and (min-width : 0px) and (max-width : 667px) {
     #Categories{
@@ -363,16 +368,65 @@ body{
 }
 
 .articleDisplay {
+    position: relative;
+    overflow: hidden;
     text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 325px;
     background-color: #bfbfbf;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
 
+}
+.articleDescription {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.9s ease;
+    background-color: rgb(0, 190, 123, 0.5);
+    overflow: hidden;
+    z-index: 20;
+    border-radius: 5px;
+    font-size: 1.6vw;
+}
+.postTitle {
+    color: white;
+    position: relative;
+    z-index: 50;
+    margin: 0;
+    font-weight: 300;
+    font-size: 3.5vw;
+    display: block;
+    background-color: rgb(0, 190, 123);
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+.articleDisplay:hover {
+    box-shadow: 0px 0px 16px 7px rgb(0, 190, 123);
+    transition: 0.9s ease;
+    cursor: pointer;
+}
+.articleDisplay:hover .articleDescription{
+    height: 100%;
+}
+.textDescription {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 #LastPost h2 {
     font-size: 40px;
     padding: 0 20px 0 20px;
     margin: 0 0 10px 0;
+    font-weight: 800;
 }
 #LastPost p {
     font-size: 25px;
