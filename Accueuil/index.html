@@ -30,8 +30,8 @@
                 <div class="menu">
                     <ul class="menuContent">
                         <li class="content">Accueil</li>
-                        <li class="content">Patrimoine</li>
-                        <li class="content">Restauration</li>
+                        <li class="content" >Patrimoine</li>
+                        <li class="content" >Restauration</li>
                         <li class="content">Hébergement</li>
                         <li class="content">Activités et Loisirs</li>
                         <li class="content">Contactez Nous</li>
@@ -39,7 +39,6 @@
                     <a href="https://www.chartres.fr/"><img src='assets/logo-Chartres.png' alt="logo trop stylé" class="logoChartresBurger"></a>
                 </div>
             </div>
-            <script src="nav.js"></script>
         </header>
         
         <section id="Carousel">
@@ -57,15 +56,14 @@
                 </div>
             </div>
             <br/>
-            <script src="carousel.js"></script>
         </section>
 
         <section id="Categories">
             <div class="categoriesContainer">
-                <div class='categories'>PATRIMOINE</div>
-                <div class='categories'>RESTAURATION</div>
-                <div class='categories'>ACTIVITÉS</div>
-                <div class='categories'>HÉBERGEMENT</div>
+                <div class='categories' id="Patrimoine"><p>PATRIMOINE</p><div class="blue-hover"></div></div>
+                <div class='categories' id="Restauration"><p>RESTAURATION</p><div class="blue-hover"></div></div>
+                <div class='categories' id="Activités"><p>ACTIVITÉS</p><div class="blue-hover"></div></div>
+                <div class='categories' id="Hébergement"><p>HÉBERGEMENT</p><div class="blue-hover"></div></div>
             </div>
         </section>
 
@@ -109,5 +107,7 @@
                     </a>
                 </ul>
         </footer>
+        <script src="nav.js"></script>
+        <script src="carousel.js"></script>
     </body>
 </html>

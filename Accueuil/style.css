@@ -44,7 +44,7 @@ body{
     left: 0;
     z-index: 150;
     width: 100%;
-    background:  #7594d7;
+    background: #00BE7B;
     transition: 0.6s;
     
 }
@@ -60,7 +60,7 @@ body{
     z-index: 120;
     transform: translateX(-100%);
     transition: 0.6s;
-    background-color: #f1f1f1;
+    background-color: #404040;
     width: 40%;
     height: 100%;
     opacity: 1;
@@ -71,7 +71,7 @@ body{
     display: none;
 }
 .menuContent li {
-    background-color: #7594d7;
+    background-color: #00BE7B;
     color: white;
     font-size: 3.5vw;
     padding: 20px 20px 20px 20px;
@@ -80,15 +80,19 @@ body{
 
 }
 .navigation {
-    font-size: 1vw;
+    font-size: 1.35vw;
     color: white;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
     margin: 0;
     
 }
 .navigation li {
-    padding: 35px 25px 25px 25px;
+    padding: 40px 25px 40px 25px;
+
 }
 .navigation a {
     text-decoration: none;
@@ -96,12 +100,11 @@ body{
 }
 .navigation li:hover {
     background-color: white;
-    color: #7594d7;
+    color: #00BE7B;
     cursor: pointer;
 }
 .logoChartresNav{
     padding: 0 100px;
-    margin: 0 200px 0 0;
 }
 .logoChartresBurger {
     width: 90%;
@@ -109,7 +112,7 @@ body{
 }
 
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 1599px) {
+@media only screen and (min-width: 0px) and (max-width: 1280px) {
     .navigation{
         display: none;
     }
@@ -132,8 +135,6 @@ body{
         display: block;
     }
 }
-
-
 
 
 
@@ -162,10 +163,14 @@ body{
 }
 .imgCarousel {
     filter: blur(3px);
+
 }
-@media only screen and (min-device-width : 0px) and (max-device-width : 667px) {
+@media only screen and (min-width : 0px) and (max-width : 667px) {
     .imgCarousel {
         filter: blur(0);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
@@ -198,7 +203,7 @@ body{
     font-size: 9vw;
     font-weight: 800;
 }
-@media only screen and (min-device-width : 668px) and (max-device-width : 1610px) {
+@media only screen and (min-width : 668px) and (max-width : 1280px) {
     .welcome{
         margin: 0 25px 50px 25px;
         right: 0%;
@@ -210,7 +215,7 @@ body{
     }
 }
 
-@media only screen and (min-device-width : 0px) and (max-device-width : 667px) {
+@media only screen and (min-width : 0px) and (max-width : 667px) {
     .welcome{
         margin: 0 25px 50px 25px;
         right: 0;
@@ -244,8 +249,8 @@ body{
     color: #f7f7ee;
     font-weight: 700;
     margin-bottom: 125px;
-    font-size: 30px;
-    box-shadow: 2px 36px 41px -28px  #7594d7;
+    font-size: 4vw;
+    box-shadow: 2px 36px 41px -28px  #00BE7B;
 }
 .categoriesContainer{
     display: grid;
@@ -257,19 +262,50 @@ body{
     grid-gap: 30px;
 }
 .categories {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #bfbfbf;
     height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 5px 5px 5px 5px;
+    z-index: 50;
 }
 .categories:hover {
-    box-shadow: 0.2rem 0.2rem 1.5rem  #7594d7;
-    transition: 0.3s;
+    transition: 0.5s;
     cursor: pointer;
+    transform: scale(1.06);
 }
-@media only screen and (min-device-width : 0px) and (max-device-width : 667px) {
+.blue-hover{
+    position: absolute;
+    top: 0;
+    z-index: 60;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 5px 5px 5px 5px;
+    opacity: 0.6;
+}
+.blue-hover:hover {
+    background-color: #00BE7B;
+}
+#Patrimoine {
+    background-image: url('assets/Categorie-Patrimoine.jpg');
+}
+#Restauration {
+    background-image: url('assets/Categories-Restaurant.jpg');
+}
+#Activités {
+    background-image: url('assets/Categories-Activités.webp');
+}
+#Hébergement {
+    background-image: url('assets/Categories-Hébergement.webp');
+}
+
+@media only screen and (min-width : 0px) and (max-width : 667px) {
     #Categories{
         font-size: 18px;
         margin-bottom: 65px;
@@ -284,7 +320,7 @@ body{
         grid-gap: 10px;
     }
 }
-@media only screen and (min-device-width : 668px) and (max-device-width : 1610px) {
+@media only screen and (min-width : 668px) and (max-width : 1280px) {
     #Categories{
         font-size: 35px;
         margin-bottom: 75px;
@@ -342,7 +378,7 @@ body{
     font-size: 25px;
     padding: 0 20px 0 20px;
 }
-@media only screen and (min-device-width : 0px) and (max-device-width : 667px) {
+@media only screen and (min-width : 0px) and (max-width : 667px) {
     #LastPost h2 {
         font-size: 25px;
     }
@@ -363,7 +399,7 @@ body{
         grid-gap: 10px;
     }
 }
-@media only screen and (min-device-width : 668px) and (max-device-width : 1610px) {
+@media only screen and (min-device-width : 668px) and (max-device-width : 1280px) {
     .articleDisplay{
         min-height: 250px;
     }  
@@ -382,7 +418,7 @@ body{
 /*Footer */  
 footer{
     height: 200px;
-    background: #7594d7;
+    background: #00BE7B;
     color: white;
     font-size: 20px;
     
@@ -406,7 +442,7 @@ footer{
 #containerFooter li:hover{
     color: #404040;
 }
-@media screen and (min-device-width : 0px) and (max-device-width : 667px){
+@media screen and (min-width : 0px) and (max-width : 667px){
     footer{
         height: 125px;
     }
@@ -418,7 +454,7 @@ footer{
         display: none;
     }
 }
-@media only screen and (min-device-width : 668px) and (max-device-width : 1610px) {
+@media only screen and (min-width : 668px) and (max-width : 1280px) {
     .logoChartresFooter{
         width: 80%;
     }
