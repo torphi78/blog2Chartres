@@ -15,7 +15,7 @@ const articlesList = [
     },
     {
         title: "Première Classe Chartres Sud",
-        picture: "../assets/Picassiette/picassiette1.jpg",
+        picture: "../assets/hotel-premiere-classe.jpg",
         link: "https://github.com/FlorentLem/Project1-BlogChartres",
         description: "Hôtel le plus abordable de Chartres, toutes les chambres comprennent la climatisation, une armoire, un bureau et une télévision à écran plat. Les salles de bains privatives sont même munies d'une douche.[...]"
     },
