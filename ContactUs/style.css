@@ -7,7 +7,7 @@
     box-sizing: border-box;
     
 }
-h1,h2, h3,p {
+h1,h2,h3,p {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -18,12 +18,13 @@ body{
 /* ------------------NAV-----------------------------*/  
 
 
+/* NavBar */
 .menuBurger{
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     padding: 0 0 0 2%;
-    margin: 0 85% 0 1%;
+    margin: 0 55% 0 1%;
     cursor: pointer;
   }
 .bars{
@@ -36,39 +37,107 @@ body{
   }
 .navBar {
     position: fixed;
+    transform: translateY(0);
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 150;
     width: 100%;
-    padding: 3% 0 3% 0;
-    background-color: #00cc85;
+    background: #00BE7B;
+    transition: 0.6s;
+    box-shadow: 8px 5px 19px -4px rgba(0,0,0,0.32);
+    
 }
 .menuToggle{
     display: flex;
     flex-direction: row;
-    height: auto;
 }
 .menu{
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 40;
+    z-index: 120;
     transform: translateX(-100%);
-    transition: 0.3s;
-    background-color: #f1f1f1;
+    transition: 0.6s;
+    background-color: #404040;
     width: 40%;
     height: 100%;
     opacity: 1;
 }
-.darkener {
-    display: none;
-    position: fixed;
-    background: rgb(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-}
 .menuContent {
-    margin-top: 5%;
+    margin: 50px 0 0 0;
+    list-style: none;
+    display: none;
+}
+.menuContent li {
+    background-color: #00BE7B;
+    color: white;
+    font-size: 3.5vw;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    display: none;
+
+}
+.navigation {
+    font-size: 1.1vw;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;    
+}
+.navigation li {
+    padding: 40px 25px 40px 25px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.navigation li:hover {
+    background-color: white;
+    color: #00BE7B;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.logoChartresNav{
+    padding: 0 100px;
+}
+.logoChartresBurger {
+    width: 90%;
+    margin: 200px 0 0 0;
+}
+
+@media screen and (min-width: 1210px){
+    .navigation {
+        font-size: 1.05vw;
+        
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+    .navigation{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menuBurger{
+        display: flex;
+    }
+    .navBar {
+        display: flex;
+        position: fixed;
+        padding: 20px 0 15px 0;
+
+    }
+    .menuContent{
+        display: block;
+    }
+    .menuContent li {
+        display: block;
+    }
 }
 
 /* ------------------MAIN-----------------------------*/  
@@ -81,8 +150,47 @@ body{
     color: white;
     font-size: 20px;
     text-shadow: 2px 2px 2px #00BE78;
-    
+    position: relative;
+}
+#img-Contact{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+.main:hover{
+    transform: scale(1.1);
+    transition:all 0.3s; 
+  }
+  
+.text {
+    color: white;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px black; 
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  }
 
+.main:hover .overlay {
+        opacity: 1;        
+    }
+
+.overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0, 190, 120, 0.7);
 }
 
 /* ------------------ABOUT US-----------------------------*/  
@@ -105,30 +213,36 @@ body{
 }
 
 #titre_AboutUS {   
-    padding-left: 40px; 
+    padding-left: 20px; 
     margin-top: 40px;
     margin-bottom: 20px;  
 }
+
+
 .groupe {
     padding-bottom: 40px;  
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
+
 
 .blocElement1{
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.blocElement2{
-    background: url(img/team.jpeg) center;
-    background-size: cover;    
-    resize: horizontal vertical;
+    display: flex;
+    justify-content: left;
+    width: auto;
+    padding-right: 5px;
 }
 
-.Developpeurs {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 150px);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 12px;
+.Developpeurs{ 
+    margin-bottom: 60px;  
+}
+
+#conteneur{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 8px 5px 19px -4px rgba(0,0,0,0.12);
     
 }
 /*.cardtext {
@@ -140,6 +254,7 @@ body{
     margin-bottom: 3px;
 }*/
 
+
 .chacun { 
     text-align: left;
     font-size: 12px;
@@ -147,15 +262,85 @@ body{
     margin-top: 5px;   
 }
 
+
+
 .cardText{
-    padding-top: 5px;
-    padding-left: 5px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 10px;
 }
-.card img{
-    text-align: center;
-    width: 100px;
-    height: 150px; 
-    padding-left: 10px;   
+
+.log-GIT {
+    margin-top: 10px;
+    height: 20px;
+}
+.log-GIT:hover{
+    transform: scale(1.2);    
+}
+.card img{    
+    width: 120px;
+    height: 150px;
+    padding-left: 10px;
+    border-radius: 5%;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+.card img:hover{
+    transform: scale(1.1);
+    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+    -webkit-transition:all 0.3s;
+    transition:all 0.3s;   
+}
+
+@media screen and (min-width: 770px) {
+    .main {
+        height: 500px;
+    }
+
+    .text {
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+
+    #titre_AboutUS {   
+        padding-left: 40px; 
+        margin-top: 40px;
+        margin-bottom: 20px;  
+    }
+    
+    .blocElement1{
+        padding-right: 20px;
+    }
+
+    .cardText{
+        padding-top: 40px;
+        width: 60%;   
+    }
+    
+    
+    .card img{
+        width: 160px;
+        height: 200px;
+    }
+    .chacun { 
+        text-align: left;
+        font-size: 16px;
+        font-style: italic;
+        margin-top: 5px;   
+    }
+    .log-GIT {
+        margin-top: 15px;
+        height: 20px;
+    }
 }
 /* ------------------CONTACT + FORMULAIRE-----------------------------*/  
 
@@ -198,7 +383,7 @@ input[type=text],[type=email], textarea {
     box-sizing: border-box;
   }
   
-  input[type=submit] {
+  button[type=submit] {
     width: 70%;
     background-color: #00BE78;
     color: white;
@@ -209,7 +394,7 @@ input[type=text],[type=email], textarea {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+  button[type=submit]:hover {
     background-color: orange;
   }
   
@@ -219,6 +404,13 @@ input[type=text],[type=email], textarea {
     padding: 20px;
   }
   
+  #error{
+      color: yellow;
+      font-style: italic;
+      text-align: center;
+      margin-top: 10px;
+      display: none;
+  }
 /*
 input[type="text"],
 input[type="email"],
@@ -261,7 +453,7 @@ input[type="submit"]:hover {
 
 /* ------------------FOOTER-----------------------------*/  
 
-footer{
+/* footer{
     height:80px;
     background: linear-gradient(180deg, #00BE78, #015e3c) ;
     color: white;
@@ -281,5 +473,58 @@ footer h3 a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
+} */
 
+  
+footer{
+    height: 200px;
+    background: linear-gradient(180deg, #00BE78, #015e3c) ;
+    color: white;
+    font-size: 20px;
+    
+}
+#containerFooter li{
+    color: white;
+    text-decoration: none;
+}
+#containerFooter{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+}
+#containerFooter a {
+    text-decoration: none;
+    color: inherit;
+}
+#containerFooter li:hover{
+    color: #404040;
+}
+@media screen and (min-width : 0px) and (max-width : 667px){
+    footer{
+        height: 125px;
+    }
+    #containerFooter li{
+        padding: 10px 10px;
+        font-size: 3vw;
+    }
+    #containerFooter li:hover{
+        color: #404040;
+    }
+    .logoChartresFooter{
+        display: none;
+    }
+}
+@media only screen and (min-width : 668px) and (max-width : 1280px) {
+    .logoChartresFooter{
+        width: 80%;
+    }
+    #containerFooter li{
+        padding: 5px 5px 5px 5px;
+    }
+    #containerFooter{
+        margin: 0 0 0 20px;
+    }
 }
