@@ -53,6 +53,3 @@ function createArticleBox(title, imageUrl, url, description) {
 for (let i = 0; i < articlesList.length; i++) {
     createArticleBox(articlesList[i].title, articlesList[i].picture, articlesList[i].link, articlesList[i].description);
 };
-
-console.log("script is working my boi");
-
