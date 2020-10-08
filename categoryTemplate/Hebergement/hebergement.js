@@ -19,12 +19,6 @@ const articlesList = [
         link: "https://github.com/FlorentLem/Project1-BlogChartres",
         description: "Hôtel le plus abordable de Chartres, toutes les chambres comprennent la climatisation, une armoire, un bureau et une télévision à écran plat. Les salles de bains privatives sont même munies d'une douche.[...]"
     },
-    {
-        title: "Médiathèque L'Apostrophe",
-        picture: "../assets/MediathequeApostrophe/apostrophe1.jpeg",
-        link: "",
-        description: "L'Hôtel des Postes transformé en médiathèque est haut de près de 55m sur 33m de longueur. Le bâtiment en béton armé, à la charpente métallique est composé d’un beffroi à horloge avec encorbellements [...]"
-    }
 ]
 
 function createArticleBox(title, imageUrl, url, description) {
