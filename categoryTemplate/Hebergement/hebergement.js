@@ -8,30 +8,24 @@ n'apparait que sur desktop. La boite se crée automatiquement.
 
 const articlesList = [
     {
-        title: "Article 2",
-        picture: "https://placekitten.com/200/287",
+        title: 'Appartement "Toits de Chartres"',
+        picture: "../assets/ToitsDeChartres/toits-de-chartres2.jpg",
         link: "https://github.com/FlorentLem/Project1-BlogChartres",
-        description: "Première phrase de l'article..."
+        description: "Très bel appartement de 75 m2 à louer. Situé dans un petit immeuble calme, à quelques minutes de la cathédrale et des rues piétonnes. Très bien équipé, le linge, draps et serviettes, sont fournis et inclus. Bibliothèque, documentation, jeux de société [...]"
     },
     {
-        title: "Article 3",
-        picture: "https://placekitten.com/200/239",
+        title: "Première Classe Chartres Sud",
+        picture: "../assets/Picassiette/picassiette1.jpg",
         link: "https://github.com/FlorentLem/Project1-BlogChartres",
-        description: "Première phrase de l'article..."
+        description: "Hôtel le plus abordable de Chartres, toutes les chambres comprennent la climatisation, une armoire, un bureau et une télévision à écran plat. Les salles de bains privatives sont même munies d'une douche.[...]"
     },
     {
-        title: "Article 4",
-        picture: "https://placekitten.com/200/90",
+        title: "Médiathèque L'Apostrophe",
+        picture: "../assets/MediathequeApostrophe/apostrophe1.jpeg",
         link: "",
-        description: "Description de l'article"
-    },
-    {
-        title: "Article 5",
-        picture: "https://placekitten.com/200/194",
-        link: "",
-        description: "Description de l'article"
+        description: "L'Hôtel des Postes transformé en médiathèque est haut de près de 55m sur 33m de longueur. Le bâtiment en béton armé, à la charpente métallique est composé d’un beffroi à horloge avec encorbellements [...]"
     }
-];
+]
 
 function createArticleBox(title, imageUrl, url, description) {
     const articleLink = document.createElement("a");
@@ -67,4 +61,3 @@ for (let i = 0; i < articlesList.length; i++) {
 };
 
 console.log("script is working my boi");
-

@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Template de la page Category</title>
+    <title>Où dormir à Chartres</title>
     <meta name="author" content="Hugo Monchatre, Florent Lemaire, Philippe Torres et Thibaut Guibert">
-    <meta name="description" content="Retrouvez-ici les articles récents de notre catégorie">
-    <link rel="stylesheet" href="category.css" type="text/css">
+    <meta name="description" content="Retrouvez-ici les meilleurs endroits où passer la nuit à Chartres">
+    <link rel="stylesheet" href="hebergement.css" type="text/css">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -22,12 +22,12 @@
                 <span class="bars"></span>
             </div>
             <ul class="navigation">
-                <a href="https://www.chartres.fr/"><img src='assets/logo-Chartres.png' alt="logo trop stylé"
+                <a href="https://www.chartres.fr/"><img src='../assets/logo-Chartres.png' alt="logo trop stylé"
                         class="logoChartresNav"></a>
                 <li class="navCategory"><a href="index.html">Accueil</a></li>
-                <li class="navCategory">Patrimoine</li>
-                <li class="navCategory">Restauration</li>
-                <li class="navCategory">Hébergement</li>
+                <li class="navCategory"><a href=../Patrimoine/patrimoine.html>Patrimoine</a></li>
+                <li class="navCategory"><a href="../Restauration/restauration.html">Restauration</a></li>
+                <li class="navCategory"><a hrf="#">Hébergement</a></li>
                 <li class="navCategory">Activités et Loisirs</li>
                 <li class="navCategory">Contactez Nous</li>
             </ul>
@@ -36,7 +36,7 @@
             <div class="menu">
                 <ul class="menuContent">
                     <li class="content">Accueil</li>
-                    <li class="content">Patrimoine</li>
+                    <li class="content"><a href="#">Patrimoine</a></li>
                     <li class="content">Restauration</li>
                     <li class="content">Hébergement</li>
                     <li class="content">Activités et Loisirs</li>
@@ -50,7 +50,15 @@
 
     <section id="mainPicContainer">
         <div class="categoryTitle">
-            <h1 id="categoryName">La Catégorie</h1>
+            <h1 id="categoryName">Hébergement</h1>
+        </div>
+    </section>
+
+    <section id="category-description">
+        <div id="description">
+            <p id="text-description"><span style="font-weight: 600;">Prévoyez votre voyage à Chartres !</span>
+                Notre rédaction a testé pour vous plusieurs gammes de prix pour que tout visiteur ait un lit douillet à
+                Chartres. Auberge de jeunesse ou hôtel, à vous de choisir parmi notre sélection.</p>
         </div>
     </section>
 
@@ -59,13 +67,12 @@
             target="_blank">
             <div class="article-img"></div>
             <div class="box-body">
-                <h2 class="article-title">Titre de l'article</h2>
+                <h2 class="article-title">Hôtel Jehan de Beauce</h2>
                 <p class="article-description">
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices tempor cursus. Donec
-                    volutpat, lorem vitae commodo ultrices.
-                    blalblllllllllll llllllll lllllllllllllll lllllll lllllllll lllll llllllllll ffrirbrbgrgrgr
-                    cnvrnbvibnrbgvrib vbruvbrubvr </p>
+                    Envie de changer d'air pour votre bien être personnel ? Avec son spa et la suite junior, au lit
+                    king-size très confortable, vous serez parfaitement installé dans cet hôtel situé près de la gare
+                    [...]
+                </p>
             </div>
         </a>
     </section>
@@ -76,13 +83,13 @@
             <li><a href="#">Contactez Nous<a></li>
             <li><a href="#">Mentions Légales</a></li>
             <a href="https://www.chartres.fr/">
-                <img src='assets/logo-Chartres.png' alt="logo trop stylé" class="logoChartresFooter">
+                <img src='../assets/logo-Chartres.png' alt="logo trop stylé" class="logoChartresFooter">
             </a>
         </ul>
     </footer>
 
-    <script src="category.js"></script>
-    <script src="nav.js"></script>
+    <script src="hebergement.js"></script>
+    <script src="../nav.js"></script>
 
 </body>
 
