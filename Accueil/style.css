@@ -80,7 +80,7 @@ body{
 
 }
 .navigation {
-    font-size: 1.2vw;
+    font-size: 1.35vw;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -111,8 +111,6 @@ a {
     width: 90%;
     margin: 200px 0 0 0;
 }
-
-
 @media only screen and (min-width: 0px) and (max-width: 1280px) {
     .navigation{
         display: none;
@@ -136,6 +134,10 @@ a {
         display: block;
     }
 }
+
+
+
+
 
 
 
@@ -479,7 +481,7 @@ a {
 /*Footer */  
 footer{
     height: 200px;
-    background: #00BE7B;
+    background: linear-gradient(180deg, #00BE78, #015e3c) ;
     color: white;
     font-size: 20px;
     
@@ -502,6 +504,7 @@ footer{
 }
 #containerFooter li:hover{
     color: #404040;
+    cursor: pointer;
 }
 @media screen and (min-width : 0px) and (max-width : 667px){
     footer{

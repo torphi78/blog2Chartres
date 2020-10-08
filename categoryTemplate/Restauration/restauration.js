@@ -16,7 +16,7 @@ const articlesList = [
     {
         title: "O Tire Bouchon",
         picture: "../assets/restauration/o-tire-bouchon/o-tire-bouchon1.jpg",
-        link: "https://github.com/FlorentLem/Project1-BlogChartres",
+        link: "../../article/tire bouchon/tireBouchon.html",
         description: "C'est une bonne adresse dans une petite rue proche de la cathédrale. La cuisine est bonne et les produits frais. On recommande les quenelles, qui fondent sous [...]"
     },
 ]

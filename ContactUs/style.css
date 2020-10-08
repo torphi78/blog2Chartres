@@ -5,15 +5,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
-}
-h1,h2,h3,p {
     font-family: 'Raleway', sans-serif;
 }
 
-body{
-    font-family: sans-serif;
-}
+
 
 /* ------------------NAV-----------------------------*/  
 
@@ -44,7 +39,6 @@ body{
     width: 100%;
     background: #00BE7B;
     transition: 0.6s;
-    box-shadow: 8px 5px 19px -4px rgba(0,0,0,0.32);
     
 }
 .menuToggle{
@@ -79,17 +73,19 @@ body{
 
 }
 .navigation {
-    font-size: 1.1vw;
+    font-size: 1.35vw;
     color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin: 0;    
+    margin: 0;
+    
 }
 .navigation li {
     padding: 40px 25px 40px 25px;
+
 }
 a {
     text-decoration: none;
@@ -108,15 +104,7 @@ a {
     width: 90%;
     margin: 200px 0 0 0;
 }
-
-@media screen and (min-width: 1210px){
-    .navigation {
-        font-size: 1.05vw;
-        
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 1200px) {
+@media only screen and (min-width: 0px) and (max-width: 1280px) {
     .navigation{
         display: none;
     }
@@ -139,6 +127,7 @@ a {
         display: block;
     }
 }
+
 
 /* ------------------MAIN-----------------------------*/  
 
@@ -204,10 +193,6 @@ a {
 .blocElement1 p{
     font-style: italic;
 }
-/*#AboutUs p{
-    display: flex;
-    justify-content: flex-start;
-}*/
 #team {
     padding-left: 40px;
 }
@@ -245,14 +230,6 @@ a {
     box-shadow: 8px 5px 19px -4px rgba(0,0,0,0.12);
     
 }
-/*.cardtext {
-    padding: 10px;
-}
-.cardtext h3{
-    text-align: left !important;
-    margin-top: 0px;
-    margin-bottom: 3px;
-}*/
 
 
 .chacun { 
@@ -359,11 +336,6 @@ a {
     color: white;
 }
 
-/*#container-form{
-    display: flex;
-    justify-content: center; 
-    align-items: center;       
-}*/
 
 
 form{
@@ -412,71 +384,16 @@ input[type=text],[type=email], textarea {
       margin-top: 10px;
       display: none;
   }
-/*
-input[type="text"],
-input[type="email"],
-{
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 4px;
-}
-textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
- }
-input[type="submit"] {
-    background-color: #00BE78;
-    color: white;
-    border-radius: 3px;
-    padding: 5px;
-    font-size: 14px;
-    border: 0px;
-}
 
-input[type="submit"]:hover {
-    background-color: orange;
-    color: white;
-    border-radius: 3px;
-    padding: 5px;
-    font-size: 14px;
-    border: 0px;
-}
-*/
 
 
 
 
 /* ------------------FOOTER-----------------------------*/  
 
-/* footer{
-    height:80px;
-    background: linear-gradient(180deg, #00BE78, #015e3c) ;
-    color: white;
-    font-size: 10px;
-    
-}
-footer h3 a{
-    color: white;
-    text-decoration: none;
-}
-footer h3 a:hover{
-    color: orange;
-}
-
-#containerFooter{
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
 
   
+/*Footer */  
 footer{
     height: 200px;
     background: linear-gradient(180deg, #00BE78, #015e3c) ;
@@ -502,17 +419,15 @@ footer{
 }
 #containerFooter li:hover{
     color: #404040;
+    cursor: pointer;
 }
 @media screen and (min-width : 0px) and (max-width : 667px){
     footer{
         height: 125px;
     }
     #containerFooter li{
-        padding: 10px 10px;
-        font-size: 3vw;
-    }
-    #containerFooter li:hover{
-        color: #404040;
+        padding: 10px 10px 10px 10px;
+        font-size: 4vw;
     }
     .logoChartresFooter{
         display: none;

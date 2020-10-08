@@ -18,6 +18,12 @@ const articlesList = [
         picture: "../assets/chartres-hand.jpg",
         link: "https://github.com/FlorentLem/Project1-BlogChartres",
         description: "Hôtel le plus abordable de Chartres, toutes les chambres comprennent la climatisation, une armoire, un bureau et une télévision à écran plat. Les salles de bains privatives sont même munies d'une douche.[...]"
+    },
+    {
+        title: 'Musées des beaux arts',
+        picture: "../assets/musées-des-beaux-arts.jpg",
+        link: "../../article/musée beau-arts/musée.html",
+        description: "Le musée des Beaux-Arts de Chartres, dans le département d'Eure-et-Loir, est le principal musée de la ville."
     }
 ]
 

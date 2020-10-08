@@ -16,14 +16,8 @@ const articlesList = [
     {
         title: "La Maison Picassiette",
         picture: "../assets/Picassiette/picassiette1.jpg",
-        link: "https://github.com/FlorentLem/Project1-BlogChartres",
+        link: "../../article/picassiette/picassiette.html",
         description: " Issu d’un milieu modeste, Raymond Isidore s’installe dans une petite maison dans le quartier chartrain de Saint-Chéron. Lors de ses promenades, il prend l'habitude de ramasser des morceaux de verre et de faïence qu'il transforme en [...]"
-    },
-    {
-        title: "Médiathèque L'Apostrophe",
-        picture: "../assets/MediathequeApostrophe/apostrophe1.jpeg",
-        link: "",
-        description: "L'Hôtel des Postes transformé en médiathèque est haut de près de 55m sur 33m de longueur. Le bâtiment en béton armé, à la charpente métallique est composé d’un beffroi à horloge avec encorbellements [...]"
     }
 ]
 
