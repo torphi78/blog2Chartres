@@ -1,0 +1,259 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.menuBurger{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 0 2%;
+    margin: 0 55% 0 1%;
+    cursor: pointer;
+  }
+.bars{
+    background-color: #E2F2FF;
+    width: 30px;
+    height: 2px;
+    margin: 3px 0;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+.navBar {
+    position: fixed;
+    transform: translateY(0);
+    top: 0;
+    left: 0;
+    z-index: 150;
+    width: 100%;
+    background: #00BE7B;
+    transition: 0.6s;
+    
+}
+.menuToggle{
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 120;
+    transform: translateX(-100%);
+    transition: 0.6s;
+    background-color: #404040;
+    width: 40%;
+    height: 100%;
+    opacity: 1;
+}
+.menuContent {
+    margin: 50px 0 0 0;
+    list-style: none;
+    display: none;
+}
+.menuContent li {
+    background-color: #00BE7B;
+    color: white;
+    font-size: 3.5vw;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    display: none;
+
+}
+.navigation {
+    font-size: 1.35vw;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    
+}
+.navigation li {
+    padding: 40px 25px 40px 25px;
+
+}
+.navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+.navigation li:hover {
+    background-color: white;
+    color: #00BE7B;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.logoChartresNav{
+    padding: 0 100px;
+}
+.logoChartresBurger {
+    width: 90%;
+    margin: 200px 0 0 0;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1280px) {
+    .navigation{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menuBurger{
+        display: flex;
+    }
+    .navBar {
+        display: flex;
+        position: fixed;
+        padding: 20px 0 15px 0;
+
+    }
+    .menuContent{
+        display: block;
+    }
+    .menuContent li {
+        display: block;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    #photoHaut{        
+        margin-top: 6.5%;
+    }
+    
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px){
+
+}
+#photoHaut{
+    background-image:url("image/IMG_20201003_130459.jpg");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}    
+#titre{
+    margin: 10px;
+    font-size: 30px;
+    
+}
+#leTexte{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+p{
+    margin: 20px;
+    max-width: 100%;
+    font-size: 24px;
+    text-align: justify;
+}   
+h2{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#photoBas{
+    width: 100%;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px; 
+    padding: 10px;
+}   
+.imageG{
+    height: 100px;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px #00cc85;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#carteGoogle{
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #00cc85;
+}
+#check:checked ~ label #cover{
+    display:block;
+    width: 100%;
+    }
+#cover{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:none;
+    }
+#box{
+    position:absolute;
+    top:100%;
+    bottom:-50%;
+    left:0;
+    right:0;
+    margin:auto;
+    width:70%;
+    height:50%;
+    border:5px solid black;
+    background-image:url("http://placekitten.com/2000/3000");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    footer{
+        height: 200px;
+        background: #00BE7B;
+        color: white;
+        font-size: 20px;
+        
+    }
+    #containerFooter li{
+        color: white;
+        text-decoration: none;
+    }
+    #containerFooter{
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    
+    }
+    #containerFooter a {
+        text-decoration: none;
+        color: inherit;
+    }
+    #containerFooter li:hover{
+        color: #404040;
+    }
+    @media screen and (min-width : 0px) and (max-width : 667px){
+        footer{
+            height: 125px;
+        }
+        #containerFooter li{
+            padding: 10px 10px 10px 10px;
+            font-size: 4vw;
+        }
+        .logoChartresFooter{
+            display: none;
+        }
+    }
+    @media only screen and (min-width : 668px) and (max-width : 1280px) {
+        .logoChartresFooter{
+            width: 80%;
+        }
+        #containerFooter li{
+            padding: 5px 5px 5px 5px;
+        }
+        #containerFooter{
+            margin: 0 0 0 20px;
+        }
+    }
