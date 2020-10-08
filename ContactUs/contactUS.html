@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="menuBurger">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </div>
+            <ul class="navigation">
+                <a href="https://www.chartres.fr/"><img src='img/logo-Chartres.png' alt="logo trop stylé"
+                        class="logoChartresNav"></a>
+                <li class="navCategory"><a href="../index.html">Accueil</a></li>
+                <li class="navCategory">Patrimoine</li>
+                <li class="navCategory">Restauration</li>
+                <li class="navCategory">Hébergement</li>
+                <li class="navCategory">Activités et Loisirs</li>
+                <li class="navCategory"><a href="contactUS.html">Contactez Nous</a></li>
+            </ul>
+        </nav>
+        <div class="menuToggle">
+            <div class="menu">
+                <ul class="menuContent">
+                    <li class="content"><a href="../index.html">Accueil</a></li>
+                    <li class="content">Patrimoine</li>
+                    <li class="content">Restauration</li>
+                    <li class="content">Hébergement</li>
+                    <li class="content">Activités et Loisirs</li>
+                    <li class="content"><a href="contactUS.html">Contactez Nous</a></li>
+                </ul>
+                <a href="https://www.chartres.fr/"><img src='img/logo-Chartres.png' alt="logo trop stylé"
+                        class="logoChartresBurger"></a>
+            </div>
+        </div>
+        <script src="nav.js"></script>
+    </header>
+
+    <div class="main">
+        <img id="img-Contact" src="" />
+        <div class="overlay">
+            <div class="text">À Propos<br>&<br>Contact</div>
+        </div>
+
+    </div>
+
+
+
+    <section class="AboutUs">
+
+        <div class="groupe">
+            <h2 id="titre_AboutUS">À Propos</h2>
+
+            <div id="gridAboutUs">
+                <div class="blocElement1">
+                    <p id="team">L'équipe est composé de 4 développeurs Webs, regroupés pour vous offrir le meilleur
+                        service possible. Pour plus de renseignements n'hésitez pas à nous contacter...</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="Developpeurs">
+            <div id="conteneur">
+                <div class="card">
+                    <img src="img/Thibault.png" />
+                </div>
+                <div class="cardText">
+                    <h3>Thibaut</h3>
+                    <p class="chacun">26 ans.<br>Ex-startuper et analyste marketing, reconverti en classe
+                        Codeur<br>{point-faible : trop fort, point-fort : modeste}. Passionné de cuisine, de jeux de
+                        société et de voyage...</p>
+                    <a href="https://github.com/thibautguibert" target="_blank"><img class="log-GIT" id="Git-Thibaut"
+                            src="img/gitLOG.webp" /></a>
+                </div>
+            </div>
+            <div id="conteneur">
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/florent-lemaire-8782961b7" target="_blank"><img
+                            src="img/Flo2.png" /></a>
+                </div>
+                <div class="cardText">
+                    <h3>Flo'</h3>
+                    <p class="chacun">Web-Dev' de génie, il code matin-midi et soir...sa passion c'est...le...code !</p>
+                    <a href="https://github.com/FlorentLem" target="_blank"><img class="log-GIT" id="Git-Flo"
+                            src="img/gitLOG.webp" /></a>
+                </div>
+            </div>
+            <div id="conteneur">
+                <div class="card">
+                    <img src="img/Hugo.png" />
+                </div>
+                <div class="cardText">
+                    <h3>Hugo</h3>
+                    <p class="chacun">Il est au Gaming ce que Zidane fût au football...il rallie code et plaisir...</p>
+                    <a href="https://github.com/HugoMonchatre" target="_blank"><img class="log-GIT" id="Git-Hugo"
+                            src="img/gitLOG.webp" /></a>
+                </div>
+            </div>
+            <div id="conteneur">
+                <div class="card">
+                    <a href="http://tgfil.com/CV" target="_blank"><img src="img/Fil.png" /></a>
+                </div>
+                <div class="cardText">
+                    <h3>Phil'</h3>
+                    <p class="chacun">Graphist-Designer depuis le Moyen-Âge. Web Developpeur depuis le Covid...Passionné
+                        de sport et voyage...<br>à suivre...</p>
+                    <a href="https://github.com/torphi78" target="_blank"><img class="log-GIT" id="Git-Fil"
+                            src="img/gitLOG.webp" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="formulaire">
+        <h2 id="titreContactUs">Contactez-nous</h2><br>
+
+        <div id="form">
+            <div class="formContainer">
+
+                <form id="formulaire">
+                    <input type="text" name="name" placeholder="name" required id="inputName"><br><br>
+
+                    <input type="email" name="Email" placeholder="email" required id="inputEmail"><br><br>
+
+                    <textarea id="message" name="message" rows="10" placeholder="Votre Message"></textarea><br><br>
+
+                    <button type="submit" value="Envoyer" id="submit">Envoyer</button><br>
+                </form>
+                <p id="error">*Tous les champs sont obligatoires</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <footer>
+        <div id="containerFooter">
+            <h3><a href="#">A propos<a></h3>
+            <h3><a href="#">Contact<a></h3>
+            <h3><a href="#">Mentions Légales</a></h3>
+        </div>
+    </footer> -->
+
+    <footer>
+        <ul id="containerFooter">
+            <li><a href="#">À Propos<a></li>
+            <li><a href="#"><a href="contactUS.html">Contactez Nous</a></li>
+            <li><a href="#">Mentions Légales</a></li>
+            <a href="https://www.chartres.fr/">
+                <img src='assets/logo-Chartres.png' alt="logo trop stylé" class="logoChartresFooter">
+            </a>
+        </ul>
+    </footer>
+
+
+
+    <script src="./nav.js"></script>
+    <script src="./form.js"></script>
+</body>
+
+
+</html>
