@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Accueil/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta name="description" content="Envie de passer un week-end à Chartres ? Vous êtes aux bon endroit, retrouver des informations et différents articles portants sur les différents lieux et intérêts de la ville de Chartres !">         
+        <title>Accueil | Chartr'Attack</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navBar">
+                <div class="menuBurger">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </div>
+                <ul class="navigation">
+                    <a href="#">
+                        <img src='Accueil/assets/logo-Chartres.png' alt="logo trop stylé" class="logoChartresNav">
+                    </a>
+                    <a href="#">
+                        <li class="navCategory">Accueil</li>
+                    </a>
+                    <a href="categoryTemplate/Patrimoine/patrimoine.html">
+                        <li class="navCategory">Patrimoine</li>
+                    </a>
+                    <a href="categoryTemplate/Restauration/restauration.html">
+                        <li class="navCategory">Restauration</li>
+                    </a>
+                    <a href="categoryTemplate/Hebergement/hebergement.html">
+                        <li class="navCategory">Hébergement</li>
+                    </a>
+                    <a href="categoryTemplate/Activites/activites.html">
+                        <li class="navCategory">Activités et Loisirs</li>
+                    </a>
+                    <a href="ContactUs/contactUS.html">
+                        <li class="navCategory">Contactez Nous</li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="menuToggle">
+                <div class="menu">
+                    <ul class="menuContent">
+                        <a href="#">
+                            <li class="content">Accueil</li>
+                        </a>
+                        <a href="categoryTemplate/Patrimoine/patrimoine.html">
+                            <li class="content" >Patrimoine</li>
+                        </a>
+                        <a href="categoryTemplate/Restauration/restauration.html">
+                            <li class="content" >Restauration</li>
+                        </a>
+                        <a href="categoryTemplate/Hebergement/hebergement.html">
+                            <li class="content">Hébergement</li>
+                        </a>
+                        <a href="categoryTemplate/Activites/activites.html">
+                            <li class="content">Activités et Loisirs</li>
+                        </a>
+                        <a href="ContactUs/contactUS.html">
+                            <li class="content">Contactez Nous</li>
+                        </a>
+                    </ul>
+                    <a href="#">
+                        <img src='Accueil/assets/logo-Chartres.png' alt="logo trop stylé" class="logoChartresBurger">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section id="Carousel">
+            <div class="carouselContainer">
+                <div class='imgContainer'>
+                    <div class="mySlides fade">
+                        <img src="Accueil/assets/chartres-cathedral-1.jpg" alt="chartres image" class="imgCarousel">
+                        <div class=welcome>
+                            <h1>WELCOME TO CHARTRES</h1>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="Accueil/assets/chartres-cathedral-2.jpg" alt="chartres image" class="imgCarousel">
+                        <div class=welcome>
+                            <h1>WELCOME TO CHARTRES</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Categories">
+            <div class="categoriesContainer">
+                <a href="categoryTemplate/Patrimoine/patrimoine.html">
+                    <div class='categories' id="Patrimoine">
+                        <p>PATRIMOINE</p>
+                        <div class="blue-hover"></div>
+                    </div>
+                </a>
+                <a href="categoryTemplate/Restauration/restauration.html">
+                    <div class='categories' id="Restauration">
+                        <p>RESTAURATION</p><div class="blue-hover"></div>
+                    </div>
+                </a>
+                <a href="categoryTemplate/Activites/activites.html">
+                    <div class='categories' id="Activités">
+                        <p>ACTIVITÉS</p><div class="blue-hover"></div>
+                    </div>
+                </a>
+                <a href="categoryTemplate/Hebergement/hebergement.html">
+                    <div class='categories' id="Hébergement">
+                        <p>HÉBERGEMENT</p>
+                        <div class="blue-hover"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id = "LastPost">
+            <h2>Derniers articles postés</h2>
+            <p>Decouvrez les derniers articles de blog publiés sur notre site.</p>
+            <div class='articleContainer'>
+                <div class='articleDisplay' id='BigArticle' style="background-image: url('Accueil/assets/chartres-en-lumieres-cathedrale-portail-nord.jpg');">
+                    <a href="article/cathédrale/cathedrale.html">
+                        <h3 class="postTitle">La Cathédrale de Chartres</h3>
+                        <div class='articleDescription'>
+                            <div class="textDescription">
+                                Description : Lorem ipsum dolor sit amet
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class='articleDisplay' style="background-image: url('Accueil/assets/o-tire-bouchon1.jpg')">
+                    <a href="article/tire bouchon/tireBouchon.html">
+                        <h3 class="postTitle">Tire Bouchon</h3>
+                        <div class='articleDescription'>
+                            <div class="textDescription">
+                                Description : Lorem ipsum dolor sit amet 
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class='articleDisplay' style="background-image: url('Accueil/assets/musées-des-beaux-arts.jpg')">
+                    <a href="article/musée beau-arts/musée.html">
+                        <h3 class="postTitle">Musées des beaux arts</h3>
+                        <div class='articleDescription'>
+                            <div class="textDescription">
+                                Description : Lorem ipsum dolor sit amet 
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class='articleDisplay' style="background-image: url('Accueil/assets/jehan-de-beauce-hotel.jpg')">
+                    <a href="article/jehan de beauce/jehan.html">
+                        <h3 class="postTitle">Hotel Jehan-De-Beauce</h3>
+                        <div class='articleDescription'>
+                            <div class="textDescription">
+                                Description : Lorem ipsum dolor sit amet
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class='articleDisplay' style="background-image: url(Accueil/assets/picassiette1.jpg)">
+                    <a href="article/picassiette/picassiette.html">
+                        <h3 class="postTitle">Maison Picassiette</h3>
+                        <div class='articleDescription'>
+                            <div class="textDescription">
+                                Description : Lorem ipsum dolor sit amet. 
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+                <ul id="containerFooter">
+                    <li>
+                        <a href="ContactUs/contactUS.html">À Propos</a>
+                    </li>
+                    <li>
+                        <a href="ContactUs/contactUS.html">Contactez Nous</a>
+                    </li>
+                    <li>
+                        <a href="ContactUs/contactUS.html">Mentions Légales</a>
+                    </li>
+                    <a href="#">
+                        <img src='Accueil/assets/logo-Chartres.png' alt="logo trop stylé" class="logoChartresFooter">
+                    </a>
+                </ul>
+        </footer>
+        <script src="Accueil/nav.js"></script>
+        <script src="Accueil/carousel.js"></script>
+    </body>
+</html>
