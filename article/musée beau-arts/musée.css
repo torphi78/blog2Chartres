@@ -245,6 +245,12 @@ h2{
         .logoChartresFooter{
             display: none;
         }
+        p{
+            margin: 20px;
+            max-width: 100%;
+            font-size: 16px;
+            text-align: justify;
+        }   
     }
     @media only screen and (min-width : 668px) and (max-width : 1280px) {
         .logoChartresFooter{
